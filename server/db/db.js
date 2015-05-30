@@ -21,8 +21,8 @@
     client: 'mysql',
     connection: {
       host: 'localhost',
-      user: 'root',
-      password: '',
+      user: 'b72ffc3224208a',
+      password: '46c105b1',
       database: 'pebble',
       charset: 'utf8',
     }
