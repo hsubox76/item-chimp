@@ -117,9 +117,10 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
+echo $DEPLOYMENT_TARGET
+
 # 4. Install bower packages
 if [ -e "$DEPLOYMENT_TARGET/bower.json" ]; then
-  echo "Found bower.json"
   cd "$DEPLOYMENT_TARGET"
   eval $NPM_CMD install bower
   exitWithMessageOnError "installing bower failed"
