@@ -128,12 +128,12 @@ if [ -e "$DEPLOYMENT_TARGET/bower.json" ]; then
 fi
 
 # 4. Run grunt  
-if [ -e "$DEPLOYMENT_TARGET/Gruntfile.js" ]; then  
-  eval $NPM_CMD install grunt-cli  
-  exitWithMessageOnError "installing grunt failed"  
-  ./node_modules/.bin/grunt --no-color browserify
-  exitWithMessageOnError "grunt failed"  
-fi  
+# if [ -e "$DEPLOYMENT_TARGET/Gruntfile.js" ]; then  
+#   eval $NPM_CMD install grunt-cli  
+#   exitWithMessageOnError "installing grunt failed"  
+#   ./node_modules/.bin/grunt --no-color browserify
+#   exitWithMessageOnError "grunt failed"  
+# fi  
 ##################################################################################################################################
 
 # Post deployment stub
