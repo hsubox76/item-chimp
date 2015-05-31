@@ -36,27 +36,27 @@
 //-------------TABLES VERIFICATION START-----------/
   db.orm.knex.schema.hasTable('users').then(function(exists) {
     if (!exists) 
-        console.log('Table users does not exist');
-  });
+      console.log('Table users does not exist');
 
-  db.orm.knex.schema.hasTable('reviews').then(function(exists) {
-    if (!exists)
-        console.log('Table reviews does not exist');
-  });
+      db.orm.knex.schema.hasTable('reviews').then(function(exists) {
+        if (!exists)
+          console.log('Table reviews does not exist');
 
-  db.orm.knex.schema.hasTable('products').then(function(exists) {
-    if (!exists) 
-        console.log('Table products does not exist');
-  });
+          db.orm.knex.schema.hasTable('products').then(function(exists) {
+            if (!exists) 
+              console.log('Table products does not exist');
 
-  db.orm.knex.schema.hasTable('followers').then(function(exists) {
-    if (!exists) 
-        console.log('Table followers does not exist');
-  });
+              db.orm.knex.schema.hasTable('followers').then(function(exists) {
+                if (!exists) 
+                  console.log('Table followers does not exist');
 
-  db.orm.knex.schema.hasTable('watchers').then(function(exists) {
-    if (!exists) 
-        console.log('Table watchers does not exist');
+                  db.orm.knex.schema.hasTable('watchers').then(function(exists) {
+                    if (!exists) 
+                        console.log('Table watchers does not exist');
+                  });
+              });
+          });
+      });
   });
 //-------------TABLES VERIFICATION END-------------/
 
