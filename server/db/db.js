@@ -25,7 +25,7 @@
       host: host,
       user: 'b72ffc3224208a',
       password: '46c105b1',
-      database: 'pebble',
+      database: 'itemchiAdD3zhs7b',
       charset: 'utf8',
     }
   });
