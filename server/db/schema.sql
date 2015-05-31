@@ -1,8 +1,8 @@
-DROP DATABASE if exists pebble;
+DROP DATABASE if exists itemchiAdD3zhs7b;
 
-CREATE DATABASE pebble;
+CREATE DATABASE itemchiAdD3zhs7b;
 
-USE pebble;
+USE itemchiAdD3zhs7b;
 -- ---
 -- Globals
 -- ---

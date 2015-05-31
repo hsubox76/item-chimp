@@ -27,6 +27,10 @@
       password: '46c105b1',
       database: 'itemchiAdD3zhs7b',
       charset: 'utf8',
+    },
+    pool: {
+      min: 2,
+      max: 4
     }
   });
   db.orm = require('bookshelf')(knex);
