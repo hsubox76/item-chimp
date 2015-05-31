@@ -28,6 +28,7 @@ var WalmartRelatedResultsDisplay = React.createClass({
     return (
       <div className="related-results-display">
         <h3>Walmart Related Results</h3>
+        <h5>Click a product to compare reviews</h5>
         {resultNodes}
       </div>
     );

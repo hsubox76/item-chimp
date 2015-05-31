@@ -99,9 +99,9 @@ body {
 
 .individual-display:hover {
   background: #F8F8F8;
-  transition: .3s transform;
+/*  transition: .3s transform;
   -webkit-transform: rotate(1deg);
-  transform: rotate(1deg);
+  transform: rotate(1deg);*/
 }
 
 /* REVIEWS CONTAINER */

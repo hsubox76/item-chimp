@@ -401,7 +401,7 @@ var SearchForm = React.createClass({
         <h4 className="query-form-title">ItemChimp, at your service.</h4>
 
         <form className="query-form" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="Enter a product" className="form-control" ref="query" />
+          <input type="text" placeholder="Enter a product ('ipod', 'hdtv', etc.)" className="form-control" ref="query" />
 
           <center><button className="btn btn-primary">Submit</button></center>
         </form>

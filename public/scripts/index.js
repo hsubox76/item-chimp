@@ -544,6 +544,7 @@ var BestbuyRelatedResultsDisplay = React.createClass({displayName: "BestbuyRelat
     return (
       React.createElement("div", {className: "related-results-display"}, 
         React.createElement("h3", null, "Best Buy Related Results"), 
+        React.createElement("h5", null, "Click a product to compare reviews"), 
         resultNodes
       )
     );
@@ -842,6 +843,7 @@ var WalmartRelatedResultsDisplay = React.createClass({displayName: "WalmartRelat
     return (
       React.createElement("div", {className: "related-results-display"}, 
         React.createElement("h3", null, "Walmart Related Results"), 
+        React.createElement("h5", null, "Click a product to compare reviews"), 
         resultNodes
       )
     );
@@ -1285,7 +1287,7 @@ var SearchForm = React.createClass({displayName: "SearchForm",
         React.createElement("h4", {className: "query-form-title"}, "ItemChimp, at your service."), 
 
         React.createElement("form", {className: "query-form", onSubmit: this.handleSubmit}, 
-          React.createElement("input", {type: "text", placeholder: "Enter a product", className: "form-control", ref: "query"}), 
+          React.createElement("input", {type: "text", placeholder: "Enter a product ('ipod', 'hdtv', etc.)", className: "form-control", ref: "query"}), 
 
           React.createElement("center", null, React.createElement("button", {className: "btn btn-primary"}, "Submit"))
         ), 
