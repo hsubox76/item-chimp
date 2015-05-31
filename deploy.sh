@@ -129,7 +129,6 @@ fi
 
 # 4. Run grunt  
 if [ -e "$DEPLOYMENT_TARGET/Gruntfile.js" ]; then  
-  cd "$DEPLOYMENT_TARGET"
   eval $NPM_CMD install grunt-cli  
   exitWithMessageOnError "installing grunt failed"  
   ./node_modules/.bin/grunt --no-color browserify
