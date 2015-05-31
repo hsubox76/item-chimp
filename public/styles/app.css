@@ -44,6 +44,10 @@ body {
   margin-top: 30px;
 }
 
+h1.logo-title {
+  margin-top: 0;
+}
+
 .query-form-container img {
   display: none;
   margin-top: 20px;
@@ -57,7 +61,7 @@ body {
 .logo-image {
   height: 70px;
   margin-right: 15px;
-  margin-top: -8px;
+  margin-top: 8px;
 }
 
 .home-page input {

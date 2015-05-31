@@ -51,67 +51,57 @@ var Navbar = React.createClass({
 var LogoArea = React.createClass({
   componentDidMount: function() {
 
-    // react-famous code for logo image to bounce up and down
-    var stateModifier = this.refs.stateModifier.getFamous();
+    // // react-famous code for logo image to bounce up and down
+    // var stateModifier = this.refs.stateModifier.getFamous();
 
-    FamousScheduler.schedule(function() {
-      var animate = function() {
-        stateModifier.halt();
-        // Code for chimp to bounce up
-        stateModifier.setTransform(Transform.translate(0, -40), {
-          curve: 'easeOut',
-          duration: 250
-        }, function() {
-          // Code for chimp to fall back down
-          stateModifier.setTransform(Transform.translate(0, 0), {
-            curve: 'easeIn',
-            duration: 125
-          }, function() {
-            // Repeat the animation infinitely
-            Timer.setTimeout(animate, 625);
-          });
-        });
-      };
+    // FamousScheduler.schedule(function() {
+    //   var animate = function() {
+    //     stateModifier.halt();
+    //     // Code for chimp to bounce up
+    //     stateModifier.setTransform(Transform.translate(0, -40), {
+    //       curve: 'easeOut',
+    //       duration: 250
+    //     }, function() {
+    //       // Code for chimp to fall back down
+    //       stateModifier.setTransform(Transform.translate(0, 0), {
+    //         curve: 'easeIn',
+    //         duration: 125
+    //       }, function() {
+    //         // Repeat the animation infinitely
+    //         Timer.setTimeout(animate, 625);
+    //       });
+    //     });
+    //   };
 
-      // Initialize the bouncing animation
-      animate();
-    });
+    //   // Initialize the bouncing animation
+    //   animate();
+    // });
 
-    // react-famous code for chimp to spin
-    var modifier = this.refs.modifier.getFamous();
+    // // react-famous code for chimp to spin
+    // var modifier = this.refs.modifier.getFamous();
 
-    // Set the spinning speed
-    var spinner = {
-      speed: 15
-    };
+    // // Set the spinning speed
+    // var spinner = {
+    //   speed: 15
+    // };
 
-    // Create a transitionable that will rotate
-    var rotateY = new Transitionable(0);
+    // // Create a transitionable that will rotate
+    // var rotateY = new Transitionable(0);
 
-    // Timer causes rotation to last infinitely
-    Timer.every(function() {
-      var adjustedSpeed = parseFloat(spinner.speed) / 1000;
-      rotateY.set(rotateY.get() + adjustedSpeed);
-      // Start the rotating animation/transition
-      modifier.setTransform(Transform.rotateY(rotateY.get()));
-    }, 1);
+    // // Timer causes rotation to last infinitely
+    // Timer.every(function() {
+    //   var adjustedSpeed = parseFloat(spinner.speed) / 1000;
+    //   rotateY.set(rotateY.get() + adjustedSpeed);
+    //   // Start the rotating animation/transition
+    //   modifier.setTransform(Transform.rotateY(rotateY.get()));
+    // }, 1);
     
   },
   render: function() {
 
     return (
       <div className="logo-container">
-        <Context>
-      {/* StateModifier is the bouncing modifier */}
-          <StateModifier ref="stateModifier" options={{align: [0.5, 0.5], origin: [0.5, 0.5]}}>
-        {/* Modifier is the spinning modifier */}
-          <Modifier ref="modifier" options={{origin: [0.5, 0.5], align: [0.5, 0.5]}}>
-            <Surface options={{size: [true, true], properties: {marginTop: '75px', marginBottom: '-60px'}}}>
-              <img src="images/chimp.png" className="logo-image" />
-            </Surface>
-          </Modifier>
-          </StateModifier>
-        </Context>
+        <img src="images/chimp.png" className="logo-image" />
         <h1 className="logo-title">ItemChimp</h1>
         <h3 className="logo-tagline">A Data Visualization Tool for Shoppers</h3>
       </div>
