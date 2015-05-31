@@ -106,6 +106,7 @@ d3Engine.create = function (el, width, height, products) {
 
   // clear D3 chart
   this.chart.selectAll("g").remove();
+  d3.select(".hoverbox").remove();
 
   // create a "g" element for every review (will contain a circle and a text obj)
   var circle = this.chart.selectAll("g.node")

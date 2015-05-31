@@ -1194,7 +1194,7 @@ var DisplayBox = React.createClass({displayName: "DisplayBox",
     // make sure column display style is appropriate for new number of columns
     this.adjustColumnDisplay();
     // refresh d3 review chart
-    this.refs.d3chart.startEngine(500, 275, reviewSetsTmp);
+    this.refs.d3chart.startEngine(500, 225, reviewSetsTmp);
   },
 
   // Shows search results columns and hides reviews columns
@@ -1419,6 +1419,7 @@ d3Engine.create = function (el, width, height, products) {
 
   // clear D3 chart
   this.chart.selectAll("g").remove();
+  d3.select(".hoverbox").remove();
 
   // create a "g" element for every review (will contain a circle and a text obj)
   var circle = this.chart.selectAll("g.node")

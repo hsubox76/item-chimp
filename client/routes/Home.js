@@ -308,7 +308,7 @@ var DisplayBox = React.createClass({
     // make sure column display style is appropriate for new number of columns
     this.adjustColumnDisplay();
     // refresh d3 review chart
-    this.refs.d3chart.startEngine(500, 275, reviewSetsTmp);
+    this.refs.d3chart.startEngine(500, 225, reviewSetsTmp);
   },
 
   // Shows search results columns and hides reviews columns
