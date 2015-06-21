@@ -13,7 +13,7 @@ process.on('uncaughtException', function(err){
 });
 
 var wmAPIKey = "va35uc9pw8cje38csxx7csk8";
-var bbAPIKey = "n34qnnunjqcb9387gthg8625";
+var bbAPIKey = "ucnrxp4vj57qubn2n8qkham8";
 
 var app = express();
 app.use(express.static('public'));
