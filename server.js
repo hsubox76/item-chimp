@@ -12,7 +12,7 @@ process.on('uncaughtException', function(err){
   fs.appendFile(__dirname + '/server/server.log', new Date() + '  |  ' + err + '\n');
 });
 
-var wmAPIKey = "va35uc9pw8cje38csxx7csk8";
+var wmAPIKey = "wmj6ah6ahfh5jx462phgygnq";
 var bbAPIKey = "ucnrxp4vj57qubn2n8qkham8";
 
 var app = express();
